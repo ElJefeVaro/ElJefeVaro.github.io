@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouquet de Emociones</title>
+    <link rel="icon" href="img/flor de loto.png">
+    <style>header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: black; 
+        padding: 15px 0px;
+    }
+    header img {
+        height: 50px;
+    }
+    nav ul  {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    nav li {
+        margin: 0px 15px;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
+    nav a.active {
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    <section id="inicio"></section>
+    <header>
+        <table>
+            <img src="img/flor de loto.png" alt="img.jpg">
+            <nav> 
+                <ul>
+                    <li><a href="index.html"><em>Home</em></a></li>
+                    <li><a href="contact.html" class="active">Contácatnos</a></li>
+                    <li><a href="gallery.html">Nuestros productos</a></li>
+                    <li><a href="ubi.html">Nuestra ubicación</a></li>
+                </ul>
+            </nav>
+        </table>
+    </header>
+    <center>
+        <form action="get" method="post">
+            <p>Nombre: <input  type="text" maxlength="50" value="" name="nombre" required></p>
+            <p>Apellidos: <input  type="text" maxlength="50" value="" name="apellidos" required></p>
+            <p>Teléfono: <input type="tel" value="" name="telefono" required></p>
+            <p>Correo electrónico: <input type="email" value="" name="correo" required></p>
+            <p>Selecciona el dia y hora de la entrega: <input type="date" name="dia" required><input type="time" name="hora" required></p>
+            <p>Dirección: <input type="text" maxlength="50" value="" name="direccion" required></p>
+            <p>Número de piso o casa <input type="number"></p> 
+            <p>Escribe aquí un texto para que sepa quién le envio las flores al destinatario:</p>
+            <textarea id="presentacion" name="presentacion" cols="40" rows="5"></textarea>
+        </form>
+    </center>
+    <a href="#inicio"><img src="img/images.png" alt="img.png" style="position: fixed; bottom: 20%; right: 2%;" width="30px" height="30px"></a>
+</body>
+</html>
