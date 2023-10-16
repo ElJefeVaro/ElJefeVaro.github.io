@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouquet de Emociones</title>
+    <link rel="icon" href="img/flor de loto.png">
+    <style>
+    body{
+        background-color:rgb(250, 239, 226);
+    }
+    h1{
+        color: white;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: black; 
+        padding: 15px 0px;
+    }
+    header img {
+        height: 50px;
+    }
+    nav ul  {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    nav li {
+        margin: 0px 15px;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
+    nav a.active {
+        color: red;
+    }
+    .center{
+        text-align: center;
+    }
+    footer{
+            background-color: black;
+            color: white    
+        }
+    </style>
+</head>
+<body>
+    <section id="inicio"></section>
+    <header>
+        <h1>Bouquet de Emociones</h1>
+        <table>
+            <nav> 
+                <ul>
+                    <li><a href="index.html"><em>Home</em></a></li>
+                    <li><a href="contact.html" class="active">Contácatnos</a></li>
+                    <li><a href="gallery.html">Nuestros productos</a></li>
+                    <li><a href="ubi.html">Nuestra ubicación</a></li>
+                </ul>
+            </nav>
+        </table>
+    </header>
+    <center>
+        <form action="get" method="post">
+            <p>Nombre*<input  type="text" maxlength="50" value="" name="nombre" required></p>
+            <p>Apellidos* <input  type="text" maxlength="50" value="" name="apellidos" required></p>
+            <p>Teléfono* <input type="tel" value="" name="telefono" required></p>
+            <p>Correo electrónico* <input type="email" value="" name="correo" required></p>
+            <p>Selecciona el dia y hora de la entrega* <input type="date" name="dia" required><input type="time" name="hora" required></p>
+            <p>Dirección* <input type="text" maxlength="50" value="" name="direccion" required></p>
+            <p>Número de piso* <input type="number"></p>
+            <p>Letra del piso* <input type="text"> </p> 
+            <p>Número de casa* <input type="number"></p>
+            <p>Escribe aquí un texto para que sepa quién le envio las flores al destinatario*</p>
+            <textarea id="presentacion" name="presentacion" cols="40" rows="5"></textarea>
+            <br>
+            <input type="submit"><input type="reset" value="Borar Datos" name="Borrar Datos">
+            <br>
+            <p>En caso de preferir una reserva via telefónica llama al : +34 900 90 90 90</p>
+            <p>En caso de preferir una reserva más personal pásate por la <a href="ubi.html">tienda</a> (click en tienda para mostrar la ubicación)</p>
+        </form>
+    </center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="center">
+        <p>&copy;2023, Bouquet de Emociones &emsp;&emsp;&emsp;&emsp;
+            Enlace a mi <a href="https://eljefevaro.github.io">GitHub</a> &emsp;&emsp;&emsp;&emsp;
+        AWEB SMRA2 &emsp;&emsp;&emsp;&emsp;
+        Hecho por Alvaro
+    </p>
+    </footer>
+</body>
+</html>
